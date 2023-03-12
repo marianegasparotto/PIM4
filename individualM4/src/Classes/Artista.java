@@ -12,6 +12,7 @@ public class Artista extends Main{
         double dataNascimento;
         String genero;
         String premiacoes;
+        //exibir premiação de algum ator---------
 
 
     public Artista(String nome, String atorOrCantor, String integrantes, double dataNascimento, String genero, String premiacoes) {

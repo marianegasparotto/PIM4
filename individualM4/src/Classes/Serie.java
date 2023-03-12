@@ -3,29 +3,29 @@ package Classes;
 import com.sun.tools.javac.Main;
 
 public class Serie extends Main {
-    double episodios;
-    String elenco;
+    int episodios;
+    private String[] elenco;
     //exibir premiação de algum ator-----------
 
 
-    public Serie(double episodios, String elenco) {
+    public Serie(int episodios, String elenco) {
         this.episodios = episodios;
-        this.elenco = elenco;
+        this.elenco = new String[]{elenco};
     }
 
-    public double getEpisodios() {
+    public int getEpisodios() {
         return episodios;
     }
 
-    public void setEpisodios(double episodios) {
+    public void setEpisodios(int episodios) {
         this.episodios = episodios;
     }
 
-    public String getElenco() {
+    public String[] getElenco() {
         return elenco;
     }
 
-    public void setElenco(String elenco) {
+    public void setElenco(String[] elenco) {
         this.elenco = elenco;
     }
 }

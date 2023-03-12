@@ -1,7 +1,7 @@
 package Classes;
 
 public class Main {
-         public class Midia{
+         public static class Midia{
             String titulo;
             int ano;
             String genero;

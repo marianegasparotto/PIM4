@@ -5,15 +5,14 @@ import com.sun.tools.javac.Main;
 public class Filme extends Main{
         double duracao;
         String tipo;
-        String elenco;
-        //exibir premiação de algum ator---------
+        private String[] elenco;
         String diretor;
         String produtor;
 
     public Filme(double duracao, String tipo, String elenco, String diretor, String produtor) {
         this.duracao = duracao;
         this.tipo = tipo;
-        this.elenco = elenco;
+        this.elenco = new String[]{elenco};
         this.diretor = diretor;
         this.produtor = produtor;
     }
@@ -34,11 +33,11 @@ public class Filme extends Main{
         this.tipo = tipo;
     }
 
-    public String getElenco() {
+    public String[] getElenco() {
         return elenco;
     }
 
-    public void setElenco(String elenco) {
+    public void setElenco(String[] elenco) {
         this.elenco = elenco;
     }
 
