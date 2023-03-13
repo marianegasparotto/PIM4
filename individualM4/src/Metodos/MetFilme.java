@@ -177,6 +177,9 @@ public class MetFilme {
             }
         }
 
+        System.out.println("Desculpe, acho que você digitou o numero escolhido incorretamente.\n" +
+                "Verifique e tente novamente.");
+
     }
 
 }

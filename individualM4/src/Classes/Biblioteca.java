@@ -4,16 +4,22 @@ import com.sun.tools.javac.Main;
 
 public class Biblioteca extends Main {
     String midias;
-    double usuario;
-    String suasPlaylists;
+    String usuario;
+    String playlist;
 
-    //composicao de musicas, filmes e series----------------
+    boolean tocando = false;
+
+    //composições--------
+    private Musica musica;
+    private Filme filme;
+    private Serie serie;
 
 
-    public Biblioteca(String midias, double usuario, String suasPlaylists) {
+    public Biblioteca(String midias, String usuario, String playlist, boolean tocando) {
         this.midias = midias;
         this.usuario = usuario;
-        this.suasPlaylists = suasPlaylists;
+        this.playlist = playlist;
+        this.tocando = tocando;
     }
 
     public String getMidias() {
@@ -24,21 +30,53 @@ public class Biblioteca extends Main {
         this.midias = midias;
     }
 
-    public double getUsuario() {
+    public String getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(double usuario) {
+    public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
 
-    public String getSuasPlaylists() {
-        return suasPlaylists;
+    public String getPlaylist() {
+        return playlist;
     }
 
-    public void setSuasPlaylists(String suasPlaylists) {
-        this.suasPlaylists = suasPlaylists;
+    public void setPlaylist(String playlist) {
+        this.playlist = playlist;
+    }
+
+    public boolean isTocando() {
+        return tocando;
+    }
+
+    public void setTocando(boolean tocando) {
+        this.tocando = tocando;
+    }
+
+    public Musica getMusica() {
+        return musica;
+    }
+
+    public void setMusica(Musica musica) {
+        this.musica = musica;
+    }
+
+    public Filme getFilme() {
+        return filme;
+    }
+
+    public void setFilme(Filme filme) {
+        this.filme = filme;
+    }
+
+    public Serie getSerie() {
+        return serie;
+    }
+
+    public void setSerie(Serie serie) {
+        this.serie = serie;
     }
 }
 
-//método tocar playlist------------------
+
