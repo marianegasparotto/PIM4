@@ -10,6 +10,7 @@ public class Musica extends Main {
         //artista - composição------------------
         boolean tocando = false;
 
+        private Artista artista;
 
     public Musica(double duracao, int nota, boolean tocando) {
         this.duracao = duracao;
@@ -41,4 +42,11 @@ public class Musica extends Main {
         this.tocando = tocando;
     }
 
+    public Artista getArtista() {
+        return artista;
+    }
+
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
 }
