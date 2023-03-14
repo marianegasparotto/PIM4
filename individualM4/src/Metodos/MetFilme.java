@@ -3,7 +3,6 @@ package Metodos;
 import Classes.Filme;
 import Classes.Main;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MetFilme {
@@ -176,9 +175,11 @@ public class MetFilme {
                 System.out.println(el[c]);
             }
         }
-
-        System.out.println("Desculpe, acho que você digitou o numero escolhido incorretamente.\n" +
-                "Verifique e tente novamente.");
+        //Outra digitação
+        else {
+            System.out.println("Desculpe, acho que você digitou o numero escolhido incorretamente.\n" +
+                    "Verifique e tente novamente.");
+        }
 
     }
 

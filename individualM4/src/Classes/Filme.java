@@ -9,6 +9,7 @@ public class Filme extends Main{
         String diretor;
         String produtor;
 
+    //constructors de filme-------------
     public Filme(double duracao, String tipo, String elenco, String diretor, String produtor) {
         this.duracao = duracao;
         this.tipo = tipo;
@@ -17,6 +18,7 @@ public class Filme extends Main{
         this.produtor = produtor;
     }
 
+    //getters and setters
     public double getDuracao() {
         return duracao;
     }

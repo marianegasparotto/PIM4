@@ -5,14 +5,14 @@ import com.sun.tools.javac.Main;
 public class Serie extends Main {
     int episodios;
     private String[] elenco;
-    //exibir premiação de algum ator-----------
 
-
+    //constructors de serie-------------
     public Serie(int episodios, String elenco) {
         this.episodios = episodios;
         this.elenco = new String[]{elenco};
     }
 
+    //getters and setters
     public int getEpisodios() {
         return episodios;
     }

@@ -5,15 +5,12 @@ import com.sun.tools.javac.Main;
 public class Artista extends Main{
         String nome;
         String atorOrCantor;
-        //exibir sua atuação:
-        //ator: formação em cinema ou teatro
-        // musico: vocalista, rapper, guitarrista etc------------
+
         String dataNascimento;
         String genero;
         String premiacoes;
-        //exibir premiação de algum ator---------
 
-
+    //constructors de artista-------------
     public Artista(String nome, String atorOrCantor, String dataNascimento, String genero, String premiacoes) {
         this.nome = nome;
         this.atorOrCantor = atorOrCantor;
@@ -22,6 +19,7 @@ public class Artista extends Main{
         this.premiacoes = premiacoes;
     }
 
+    //getters and setters
     public String getNome() {
         return nome;
     }

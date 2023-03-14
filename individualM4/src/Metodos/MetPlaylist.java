@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MetPlaylist {
     public static void main(String[] args) {
 
-        Playlist fila = new Playlist();
+        Playlist fila = new Playlist("Musica",1,"Musica");
         Musica playlist_musicas = new Musica(3.22, 5, true);
         Main.Midia midia_play = new Main.Midia("Luna", 2021, "Pop");
         Serie play_ser = new Serie(10, "Lee Dong Wook, Wi Ha Joon, Han Ji Eun");
@@ -16,7 +16,6 @@ public class MetPlaylist {
 
 
         Scanner teclado = new Scanner(System.in);
-
 
         System.out.println("Você está nas playlists do Kmax!\n" +
                 "Escolha qual tipo das nossas mídias você deseja :");
@@ -175,10 +174,7 @@ public class MetPlaylist {
 
             }
 
-
         }
-
-
 
     }
 }

@@ -14,7 +14,7 @@ public class Biblioteca extends Main {
     private Filme filme;
     private Serie serie;
 
-
+    //constructors de biblioteca-------------
     public Biblioteca(String midias, String usuario, String playlist, boolean tocando) {
         this.midias = midias;
         this.usuario = usuario;
@@ -22,6 +22,7 @@ public class Biblioteca extends Main {
         this.tocando = tocando;
     }
 
+    //getters and setters
     public String getMidias() {
         return midias;
     }

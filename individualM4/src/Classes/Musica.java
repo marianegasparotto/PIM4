@@ -7,20 +7,19 @@ import java.util.Scanner;
 public class Musica extends Main {
         double duracao;
         int nota;
-        //artista - composição------------------
         boolean tocando = false;
 
+        //artista - composição------------------
         private Artista artista;
 
+    //constructors de musica------------
     public Musica(double duracao, int nota, boolean tocando) {
         this.duracao = duracao;
         this.nota = nota;
         this.tocando = tocando;
     }
 
-    public Musica(Playlist filaOne, Musica playlistMusicasOne) {
-    }
-
+    //getters and setters
     public double getDuracao() {
         return duracao;
     }

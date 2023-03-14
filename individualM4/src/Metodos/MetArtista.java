@@ -100,7 +100,7 @@ public class MetArtista {
                     arts.getPremiacoes() + " juntamente com sua banda musical Day6");
 
         }
-
+        //Outra digitação
         else{
             System.out.println("Desculpe, acho que você digitou o nome do artista incorretamente.\n" +
                     "Verifique e tente novamente.");
