@@ -22,9 +22,10 @@ public class MetPlaylist {
                 "Escolha qual tipo das nossas mídias você deseja :");
         String midias = teclado.nextLine();
 
+        //Utilização do while para voltar e prosseguir com as respectivas midias
+
         //Caso a escolha seja a midia musica ------------------------
-        if (midias.equalsIgnoreCase("musica")) {
-            playlist_musicas.setTocando(true);
+        while (midias.equalsIgnoreCase("musica")) {
             boolean play = true;
             String esta_tocando = Boolean.toString(play).replace("true", "Tocando!");
             System.out.println(esta_tocando);
@@ -34,6 +35,7 @@ public class MetPlaylist {
             fila.setMidiaAtual("Rush Hour");
             playlist_musicas.setDuracao(3.22);
             playlist_musicas.setNota(5);
+            playlist_musicas.setTocando(true);
 
             System.out.println("Escolha de mídia: " + fila.getMidias());
             System.out.println("Ordem: " + fila.getOrdemExecucao());
@@ -44,7 +46,8 @@ public class MetPlaylist {
             System.out.println("Digite next para sua próxima mídia");
             String resp_1 = teclado.nextLine();
 
-            if (resp_1.equalsIgnoreCase("next")) {
+            while (resp_1.equalsIgnoreCase("next")) {
+
                 System.out.println(esta_tocando);
 
                 fila.setMidias("Musica");
@@ -59,14 +62,20 @@ public class MetPlaylist {
                 System.out.println("Duração: " + playlist_musicas.getDuracao());
                 System.out.println("Nota: " + playlist_musicas.getNota() + " estrelas");
 
-            }
+                System.out.println("Digite back para retornar a mídia anterior");
+                String resp_2 = teclado.nextLine();
 
-            //Caso a escolha seja a midia filme ------------------------
-        } else if (midias.equalsIgnoreCase("filme")) {
+                if (resp_2.equalsIgnoreCase("back")) {
+                    break;
+                }
+            }
+        }
+
+         //Caso a escolha seja a midia filme ------------------------
+         while (midias.equalsIgnoreCase("filme")) {
             boolean play = true;
             String esta_tocando = Boolean.toString(play).replace("true", "Tocando!");
             System.out.println(esta_tocando);
-
 
             fila.setMidias("Filme");
             fila.setOrdemExecucao(1);
@@ -85,9 +94,9 @@ public class MetPlaylist {
             System.out.println(play_film.getTipo());
 
             System.out.println("Digite next para sua próxima mídia");
-            String resp_1 = teclado.nextLine();
+            String resp_3 = teclado.nextLine();
 
-            if (resp_1.equalsIgnoreCase("next")) {
+            while (resp_3.equalsIgnoreCase("next")) {
                 System.out.println(esta_tocando);
 
                 fila.setMidias("Filme");
@@ -106,9 +115,18 @@ public class MetPlaylist {
                 System.out.println("Gênero: " + midia_play.getGenero());
                 System.out.println(play_film.getTipo());
 
+                System.out.println("Digite back para retornar a mídia anterior");
+                String resp_4 = teclado.nextLine();
+
+                if (resp_4.equalsIgnoreCase("back")) {
+                    break;
+                }
             }
+
+         }
+
             //Caso a escolha seja a midia serie ------------------------
-        } else if (midias.equalsIgnoreCase("serie")) {
+            while (midias.equalsIgnoreCase("serie")) {
             boolean play = true;
             String esta_tocando = Boolean.toString(play).replace("true", "Tocando!");
             System.out.println(esta_tocando);
@@ -129,9 +147,9 @@ public class MetPlaylist {
             System.out.println("Gênero: " + midia_play.getGenero());
 
             System.out.println("Digite next para sua próxima mídia");
-            String resp_1 = teclado.nextLine();
+            String resp_5 = teclado.nextLine();
 
-            if (resp_1.equalsIgnoreCase("next")) {
+            while(resp_5.equalsIgnoreCase("next")) {
                 System.out.println(esta_tocando);
 
                 fila.setMidias("Serie");
@@ -147,12 +165,21 @@ public class MetPlaylist {
                 System.out.println("Ano de lançamento: " + midia_play.getAno());
                 System.out.println(play_ser.getEpisodios() + " episódios");
                 System.out.println("Gênero: " + midia_play.getGenero());
+
+                System.out.println("Digite back para retornar a mídia anterior");
+                String resp_6 = teclado.nextLine();
+
+                if (resp_6.equalsIgnoreCase("back")) {
+                    break;
+                }
+
             }
 
 
         }
 
+
+
     }
 }
-//métodos proxima midia, midia anterior e misturar midias ------------------
 

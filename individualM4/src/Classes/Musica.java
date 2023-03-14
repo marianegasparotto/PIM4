@@ -18,6 +18,9 @@ public class Musica extends Main {
         this.tocando = tocando;
     }
 
+    public Musica(Playlist filaOne, Musica playlistMusicasOne) {
+    }
+
     public double getDuracao() {
         return duracao;
     }
